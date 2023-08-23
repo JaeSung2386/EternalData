@@ -4,7 +4,7 @@ import "@/scss/index.scss";
 
 function Buttons() {
   return (
-    <div className="container button-contain">
+    <div className="container button-container">
       <a href="#about" className="btn pri">
         Learn more
       </a>

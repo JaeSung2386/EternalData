@@ -3,7 +3,7 @@ import "@/scss/index.scss";
 import Buttons from "../button/button";
 import { BsMouse } from "react-icons/bs";
 
-function home() {
+function Home() {
   return (
     <div id="home" className="container home-container">
       <div className="logo">
@@ -40,4 +40,4 @@ function home() {
   );
 }
 
-export default home;
+export default Home;

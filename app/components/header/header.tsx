@@ -2,7 +2,7 @@ import React from "react";
 
 import "@/scss/index.scss";
 
-function header() {
+function Header() {
   return (
     <div id="home" className="container header-container">
       <h3>
@@ -16,4 +16,4 @@ function header() {
   );
 }
 
-export default header;
+export default Header;

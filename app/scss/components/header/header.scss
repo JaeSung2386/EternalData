@@ -1,14 +1,15 @@
 .header-container {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin-top: 5px;
-  transform: translateY(-100%);
+  transform: translateY(-100px);
   opacity: 0;
   backdrop-filter: blur(20px);
-  animation: fade-in 1 ease 1 forwards;
+  animation: fade-in 1s ease 1 forwards;
 }
 
 @keyframes fade-in {
@@ -34,6 +35,7 @@
 
 .header-container h3 p span {
   color: var(--color-pri);
+  font-size: 20px;
 }
 
 .header-container h2 {

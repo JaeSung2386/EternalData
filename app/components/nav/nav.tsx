@@ -8,13 +8,7 @@ import { TiGroupOutline } from "react-icons/ti";
 import { BiMessageRoundedDots } from "react-icons/bi";
 import { BsArrowDownCircle } from "react-icons/bs";
 
-function nav() {
-  const handleIconClick = (e: React.ChangeEvent<HTMLInputElement>) => {
-    changeActive(e.currentTarget);
-  };
-
-  const changeActive = (target) => {};
-
+function Nav() {
   return (
     <div className="navigation">
       <a href="#home">
@@ -36,4 +30,4 @@ function nav() {
   );
 }
 
-export default nav;
+export default Nav;
