@@ -18,44 +18,19 @@ function nav() {
   return (
     <div className="navigation">
       <a href="#home">
-        <AiOutlineHome
-          className="icon active-nav"
-          onClick={(e: React.ChangeEvent<HTMLInputElement>) =>
-            handleIconClick(e)
-          }
-        />
+        <AiOutlineHome className="icon active-nav" />
       </a>
       <a href="#about">
-        <AiOutlineUser
-          className="icon active-nav"
-          onClick={(e: React.ChangeEvent<HTMLInputElement>) =>
-            handleIconClick(e)
-          }
-        />
+        <AiOutlineUser className="icon active-nav" />
       </a>
       <a href="#members">
-        <TiGroupOutline
-          className="icon active-nav"
-          onClick={(e: React.ChangeEvent<HTMLInputElement>) =>
-            handleIconClick(e)
-          }
-        />
+        <TiGroupOutline className="icon active-nav" />
       </a>
       <a href="#contact">
-        <BiMessageRoundedDots
-          className="icon active-nav"
-          onClick={(e: React.ChangeEvent<HTMLInputElement>) =>
-            handleIconClick(e)
-          }
-        />
+        <BiMessageRoundedDots className="icon active-nav" />
       </a>
       <a href="#footer">
-        <BsArrowDownCircle
-          className="icon active-nav"
-          onClick={(e: React.ChangeEvent<HTMLInputElement>) =>
-            handleIconClick(e)
-          }
-        />
+        <BsArrowDownCircle className="icon active-nav" />
       </a>
     </div>
   );
