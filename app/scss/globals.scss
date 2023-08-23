@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -22,21 +21,6 @@ html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
-  width: 0;
-}
-
-:root {
-  --color-pri: rgb(82, 188, 250);
-  --color-pri-light: rgb(82, 188, 250, 0.445);
-  --color-sec: rgb(172, 17, 233);
-  --color-sec-light: rgb(172, 17, 233, 0.274);
-
-  --pc-width: 75%;
-  --tab-width: 90%;
-  --phone-width: 100%;
-}
-
 body::before {
   content: "";
   position: fixed;
@@ -45,7 +29,6 @@ body::before {
   background: rgb(0, 255, 255);
   filter: blur(140px);
 }
-
 body::after {
   content: "";
   position: fixed;
@@ -56,9 +39,8 @@ body::after {
   background: rgb(183, 0, 255);
   filter: blur(140px);
 }
-
 .bg-circle1 {
-  position: fiexed;
+  position: fixed;
   top: 0px;
   right: 0px;
   height: 200px;
@@ -66,9 +48,8 @@ body::after {
   background: rgb(0, 255, 255);
   filter: blur(140px);
 }
-
 .bg-circle2 {
-  position: fiexed;
+  position: fixed;
   bottom: 100px;
   right: 250px;
   height: 200px;
@@ -76,8 +57,23 @@ body::after {
   background: rgb(183, 0, 255);
   filter: blur(150px);
 }
+::-webkit-scrollbar {
+  width: 0;
+}
+
+:root {
+  --color-pri: rgb(82, 188, 250);
+  --color-pri-light: rgba(82, 188, 250, 0.445);
+  --color-sec: rgb(172, 17, 233);
+  --color-sec-light: rgba(172, 17, 233, 0.274);
+
+  --pc-width: 75%;
+  --tab-width: 90%;
+  --phone-width: 100%;
+}
 
 .container {
+  border-radius: 10px;
   width: var(--pc-width);
   color: var(--text-pri);
   padding: 10px 40px;

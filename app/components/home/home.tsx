@@ -1,9 +1,19 @@
-import React from "react";
+"use client";
+
+import React, { use, useEffect } from "react";
 import "@/scss/index.scss";
 import Buttons from "../button/button";
 import { BsMouse } from "react-icons/bs";
 
 function Home() {
+  useEffect(() => {
+    const toggle = document.querySelector(".main-img");
+    toggle.addEventListener("click", () => {
+      console.log("click");
+      toggle.classList.toggle("active");
+    });
+  }, []);
+
   return (
     <div id="home" className="container home-container">
       <div className="logo">
@@ -17,9 +27,12 @@ function Home() {
           <span className="circle"></span>
           <span className="circle"></span>
         </div>
-        <img src="{img}" alt="" />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Grass_at_a_lawn_with_morning_dew_02.jpg"
+          alt=""
+        />
       </div>
-      <a href="#fotter" className="scroll-down">
+      <a href="#footer" className="scroll-down">
         <hr />
         <h5>scroll down</h5>
         <BsMouse className="scroll" />

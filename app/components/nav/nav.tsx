@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 
 import "@/scss/index.scss";
 
@@ -9,22 +11,39 @@ import { BiMessageRoundedDots } from "react-icons/bi";
 import { BsArrowDownCircle } from "react-icons/bs";
 
 function Nav() {
+  useEffect(() => {
+    const Icons = document.querySelectorAll(".navigation .icon");
+    Icons.forEach((icon) => {
+      icon.addEventListener("click", () => {
+        changeActive();
+        icon.classList.add("active-nav");
+      });
+    });
+  }, []);
+
+  const changeActive = () => {
+    const Icons = document.querySelectorAll(".navigation .icon");
+    Icons.forEach((icon) => {
+      icon.classList.remove("active-nav");
+    });
+  };
+
   return (
     <div className="navigation">
       <a href="#home">
         <AiOutlineHome className="icon active-nav" />
       </a>
       <a href="#about">
-        <AiOutlineUser className="icon active-nav" />
+        <AiOutlineUser className="icon" />
       </a>
       <a href="#members">
-        <TiGroupOutline className="icon active-nav" />
+        <TiGroupOutline className="icon" />
       </a>
       <a href="#contact">
-        <BiMessageRoundedDots className="icon active-nav" />
+        <BiMessageRoundedDots className="icon" />
       </a>
       <a href="#footer">
-        <BsArrowDownCircle className="icon active-nav" />
+        <BsArrowDownCircle className="icon" />
       </a>
     </div>
   );
